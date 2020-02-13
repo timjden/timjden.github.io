@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+.welcome-screen {
+  
+  background-image: url('/images/background.png');
+  background-position: center;
+  background-repeat: no-repeat;
+
+  width: 100%;
+  min-height: 100vh;
+  
+  /*border: 1px solid black;*/
+  display: inline-block;
+  
+  
+}
+
+.pseudo-image-wrapper {
+  /*border: 1px solid red;*/
+  height: 800px;
+  width: 2px;
+  display: inline-block;
+  position: relative;
+}
+
+.title {
+
+font-family: 'Amatic SC',sans-serif;
+font-size: 5rem;
+font-weight: bold;
+width: 20rem;
+
+text-align: left;
+
+position: absolute;
+top: 0.25em;
+right: 0.5em;
+
+
+
+}
+
+.button-continue {
+
+font-family: 'Amatic SC',sans-serif;
+font-size: 2.5rem;
+font-weight: bold;
+height: 50px;
+width: 150px;
+background-color: white;
+border: 2px solid black;
+
+position: absolute;
+top: 5.75em;
+right: 5em;
+
+border-style: solid;
+border-color: black;
+border-width: 3px;
+border-radius: 2px;
+
+box-shadow: 2px 2px 2px grey;
+
+
+
+transition: background-color 0.5s;
+transition: color 0.5s;
+transition: border-color 0.5s;
+
+}
+
+.button-continue:hover {
+
+background-color: black;
+color: white;
+border-color: white;
+
+}
+
+.link {
+  
+  display:block;
+  text-decoration: none;
+  width: inherit;
+  height: inherit;
+  margin: auto;
+  padding-top: 0px;
+  text-align: center;
+  color: inherit;
+
+}
+
+.upload {
+  border: 2px solid black;
+}
+
+.upload {
+
+  font-family: 'Amatic SC',sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  line-height: 8.5rem;
+
+  position: absolute;
+  top: 1.75em;
+  left: 1em;
+
+  height: 150px;
+  width: 250px;
+
+  border: 2px solid black;
+
+}
+
+.upload:hover {
+  
+  border: 2px dashed;
+
+}
+/* website starts breaking down at width 980px*/
+
+@media screen and (max-width: 735px) {
+
+  .pseudo-image-wrapper {
+    position: static;
+  }
+
+  .title {
+    left: 0.25em;
+    font-size: 4.5em;
+    
+  }
+
+  .button-continue {
+    left: 0.5em;
+    top: 5em;
+    
+  }
+
+}
